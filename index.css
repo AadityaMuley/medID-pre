@@ -5,15 +5,35 @@
 
 body{
 	background-color: #E6FFFB;
+	font-family: ubuntu;
 }
 
-#title{
-	text-align: center;
-	font-size: 25px;
+h1{
+	letter-spacing: 2px;
+    margin-top: 80px;
+    text-align: center;
 	color: #FA630D;
 }
 
-#forms{
+.user{
 	text-align: center;
-	vertical-align: center;
+    background: #fff;
+    max-width: 960px;
+    margin: 30px auto;
+    padding:  20px 30px;
+    border-radius: 10px 120px 10px 10px;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.1)
 }
+
+.gender {
+  position: relative;
+  display: block;
+  width: 20%;
+  margin: 0 auto;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Segoe UI', 'Calibri', 'Arial', sans-serif;
+  font-size: 18px;
+  color: #60666d;
+  
+  @media (min-width: 768px) {
+    width: 70%;
+  }
