@@ -1,0 +1,19 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background-color: #E6FFFB;
+}
+
+#title{
+	text-align: center;
+	font-size: 25px;
+	color: #FA630D;
+}
+
+#forms{
+	text-align: center;
+	vertical-align: center;
+}
