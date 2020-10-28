@@ -1,18 +1,18 @@
-const allist = document.querySelector("#allergies");
+const allist = document.querySelector("#al");
 
 function renderAl(doc){
-	let li = document.createElement("li");
-	let name = document.createElement("span");
-	let freq = document.createElement("span");
+	let row = document.createElement("tr");
+	let name = document.createElement("th");
+	let freq = document.createElement("th");
 
-	li.setAttribute("data-id", doc.id);
+	row.setAttribute("data-id", doc.id);
 	name.textContent = doc.data().name;
 	freq.textContent = doc.data().frequency;
 
-	li.appendChild(name);
-	li.appendChild(freq);
+	row.appendChild(name);
+	row.appendChild(freq);
 
-	allist.appendChild(li);
+	allist.appendChild(row);
 }
 
 db.collection("allergies").get().then((snapshot) => {

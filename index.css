@@ -25,6 +25,20 @@ h1{
     box-shadow: 1px 3px 5px rgba(0,0,0,0.1)
 }
 
+table{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.al{
+  border: 1px solid black;
+}
+
+.alg{
+  border: 1px solid black;
+  padding: 15px;
+}
+
 .gender {
   position: relative;
   display: block;
