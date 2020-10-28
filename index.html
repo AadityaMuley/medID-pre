@@ -18,15 +18,15 @@
 
 	<div id="forms" class="user">
 		<form>
-			<h4>Name:</h4>
+			<h4>Name</h4>
 			<input type="text" id="name">
 			<br><br><br><br><br>
 
-			<h4>DoB:</h4>
+			<h4>DoB</h4>
 			<input type="date" id="dob">
 			<br><br><br><br><br>
 
-			<h4>Gender:</h4>
+			<h4>Gender</h4>
 			<select id="gender" class="gender">
 				<option value="male">Male</option>
 				<option value="female">Female</option>
@@ -34,29 +34,23 @@
 			</select>
 			<br><br><br><br><br>
 
+
 			<table>
 				<tr>
 					<th>
-						<h4>Allergies:</h4>
-						<input type="text" id="name">
+						<h4>Allergies</h4>
+						<input type="text" id="input" oninput="suggest('input', 'suggestions')">
 					</th>
 
 					<th>
-						<table id="al" class="al">
-							<caption>Allergies</caption>
-							<tr>
-								<th id="alg" class="alg">Name</th>
-								<th id="alg" class="alg">Frequency</th>
-							</tr>
-						</table>
+						<div id="suggestions"></div>
 					</th>
 				</tr>
 			</table>
 
-
 			<br><br><br><br><br>
 
-			<button>Submit</button>
+			<input type="button" value="Submit" onclick="">
 		</form>
 	</div>
 

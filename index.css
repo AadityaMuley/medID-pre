@@ -22,32 +22,53 @@ h1{
     margin: 30px auto;
     padding:  20px 30px;
     border-radius: 10px 120px 10px 10px;
-    box-shadow: 1px 3px 5px rgba(0,0,0,0.1)
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+
+input[type=text] {
+  width: 30%;
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+input[type=text]:focus {
+  border-bottom: 4px solid #FA630D;
+}
+
+#input {
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#suggestions {
+  
+}
+
+input[type=button] {
+  background-color: #FA630D;
+  border: none;
+  border-radius: 40px;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+select {
+  width: 20%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 40px;
+  background-color: #f1f1f1;
 }
 
 table{
   margin-left: auto;
   margin-right: auto;
 }
-
-.al{
-  border: 1px solid black;
-}
-
-.alg{
-  border: 1px solid black;
-  padding: 15px;
-}
-
-.gender {
-  position: relative;
-  display: block;
-  width: 20%;
-  margin: 0 auto;
-  font-family: 'Open Sans', 'Helvetica Neue', 'Segoe UI', 'Calibri', 'Arial', sans-serif;
-  font-size: 18px;
-  color: #60666d;
-  
-  @media (min-width: 768px) {
-    width: 70%;
-  }
