@@ -49,7 +49,7 @@ ul {
   
 }
 
-input[type=button] {
+button {
   background-color: #FA630D;
   border: none;
   border-radius: 40px;
@@ -71,4 +71,8 @@ select {
 table{
   margin-left: auto;
   margin-right: auto;
+}
+
+.ui-helper-hidden-accessible{
+  display:none !important;
 }

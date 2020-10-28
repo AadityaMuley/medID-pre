@@ -8,6 +8,9 @@
 	<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
 
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script> 
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
+
 	<link rel="stylesheet" type="text/css" href="index.css">
 </head>
 
@@ -17,40 +20,30 @@
 	</div>
 
 	<div id="forms" class="user">
-		<form>
+		<form id="user-form">
 			<h4>Name</h4>
-			<input type="text" id="name">
+			<input type="text" id="name" name="name">
 			<br><br><br><br><br>
 
 			<h4>DoB</h4>
-			<input type="date" id="dob">
+			<input type="date" id="dob" name="dob">
 			<br><br><br><br><br>
 
 			<h4>Gender</h4>
-			<select id="gender" class="gender">
+			<select id="gender" class="gender" name="gen">
 				<option value="male">Male</option>
 				<option value="female">Female</option>
 				<option value="other">Others</option>
 			</select>
 			<br><br><br><br><br>
 
-
-			<table>
-				<tr>
-					<th>
-						<h4>Allergies</h4>
-						<input type="text" id="input" oninput="suggest('input', 'suggestions')">
-					</th>
-
-					<th>
-						<div id="suggestions"></div>
-					</th>
-				</tr>
-			</table>
+			<h4>Allergies</h4>
+			<input type="text" name="allergies" id="allergies" >
+			
 
 			<br><br><br><br><br>
 
-			<input type="button" value="Submit" onclick="">
+			<button>Submit</button>
 		</form>
 	</div>
 
